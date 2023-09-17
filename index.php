@@ -56,7 +56,6 @@
         </center>
     </body>
 	<footer>
-		<script>
-		</script>
+		<p>test</p>
 	</footer>
 </html>
