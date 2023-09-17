@@ -18,3 +18,7 @@ p {
     border-color: #d35400;
     font-size: 1em;
     margin-bottom: 1em; }
+
+.col-sm {
+    margin-bottom: 15px; 
+}

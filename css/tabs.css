@@ -7,7 +7,7 @@
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
-    background-color: inherit;
+    background-color: #ff00114d;
     float: center;
     border: none;
     outline: none;
@@ -30,5 +30,10 @@
     background-color: #d5464680;
     color: #b1b1b1
   }
-  
+#header {
+  border-radius: 25px;
+  background: #9b6a6a	;
+  padding: 20px;
+  text-align: center;
+}
   /* Style the tab content */

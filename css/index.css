@@ -48,3 +48,16 @@ p {
     color: #d35400;
     text-decoration: underline; }
 
+#header {
+  border-radius: 25px;
+  background: #9b6a6a	;
+  padding: 20px;
+  text-align: center;
+}
+#nyan {
+  background-color: #2c3e50;
+  color: #d35400;
+  border-color: #d35400;
+  border: 1px solid; 
+}
+

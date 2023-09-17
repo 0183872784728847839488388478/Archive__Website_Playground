@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="./css/index.css">
 		<link rel="stylesheet" href="./css/tabs.css">
 		<script src="./js/tabs.js"></script>
-		<script src="./js/slider.js"></script>
+
 		<script>
 			function resizeIframe(obj) {
 				obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
@@ -20,22 +20,42 @@
                         <h3>Corrupteddroid Panel</h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 col-xs-6"><audio preload="auto" id="start">
-                            <source src="./sound/panel/start.mp3" type="audio/mpeg">
-                        </audio><button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('start').play()">Start</button></div>
-                </div>
 			</div>
+
+			<div class="container">
+				<div class="col">
+					<div class="col-md-4 col-xs-6">
+						<div><audio preload="auto" id="start">
+							<source src="./sound/panel/start.mp3" type="audio/mpeg">
+							</audio><button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('start').play()">Start</button>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-6">
+						<div><audio preload="auto" id="end">
+							<source src="./sound/panel/end.mp3" type="audio/mpeg">
+							</audio><button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('end').play()">End</button>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-6">
+						<div><audio preload="auto" id="wonderhoy">
+							<source src="./sound/panel/wonderhoy.mp3" type="audio/mpeg">
+							</audio><button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('wonderhoy').play()">???</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div id="picker" class="tab">
+				<button class="tablinks" onclick="tab('level_0')">Waiting Room</button>
                 <button class="tablinks" onclick="tab('level_1')">Level 1</button>
 				<button class="tablinks" onclick="tab('level_2')">Level 2</button>
 				<button class="tablinks" onclick="tab('level_3')">Level 3</button>
 				<button class="tablinks" onclick="tab('level_4')">Level 4</button>
 				<button class="tablinks" onclick="tab('level_5')">Level 5</button>
 			</div>
-			<div id="viewer" class="">
+			<div id="viewer" class="container">
 				<div id="level_0" class="tabcontent">
-					<iframe id="reload"src="./category/level_0.html" style="border:0px #ffffff none;" name="level_3" scrolling="no" frameborder="1" onload="resizeIframe(this)" allowfullscreen></iframe>
+					<iframe id="reload"src="./category/level_0.html" style="border:0px #ffffff none;" name="level_0" scrolling="no" frameborder="1" onload="resizeIframe(this)" allowfullscreen></iframe>
 				</div>
                 <div id="level_1" class="tabcontent">
 					<iframe id="reload"src="./category/level_1.html" style="border:0px #ffffff none;" name="level_1" scrolling="no" frameborder="1" onload="resizeIframe(this)" allowfullscreen></iframe>
@@ -47,16 +67,13 @@
 					<iframe id="reload"src="./category/level_3.html" style="border:0px #ffffff none;" name="level_3" scrolling="no" frameborder="1" onload="resizeIframe(this)" allowfullscreen></iframe>
 				</div>
 				<div id="level_4" class="tabcontent">
-					<iframe id="reload"src="./category/level_4.html" style="border:0px #ffffff none;" name="level_3" scrolling="no" frameborder="1" onload="resizeIframe(this)" allowfullscreen></iframe>
+					<iframe id="reload"src="./category/level_4.html" style="border:0px #ffffff none;" name="level_4" scrolling="no" frameborder="1" onload="resizeIframe(this)" allowfullscreen></iframe>
 				</div>
 				<div id="level_5" class="tabcontent">
-					<iframe id="reload"src="./category/level_5.html" style="border:0px #ffffff none;" name="level_3" scrolling="no" frameborder="1" onload="resizeIframe(this)" allowfullscreen></iframe>
+					<iframe id="reload"src="./category/level_5.html" style="border:0px #ffffff none;" name="level_5" scrolling="no" frameborder="1" onload="resizeIframe(this)" allowfullscreen></iframe>
 				</div>
 			</div>
 			
         </center>
     </body>
-	<footer>
-		<p>test</p>
-	</footer>
 </html>
