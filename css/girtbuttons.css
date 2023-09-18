@@ -1,0 +1,36 @@
+.grid-container {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 75px;
+    
+  }
+  
+.grid-container > div {
+  background-color: #ff00114d;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  border-radius: 25px;
+  color: rgb(179, 184, 179)
+  }
+
+#header {
+    border-radius: 25px;
+    background: #9b6a6a	;
+  }
+
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 75px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+
+
+}

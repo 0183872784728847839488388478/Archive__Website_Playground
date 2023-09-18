@@ -1,0 +1,27 @@
+.text {
+    color: #d35400; 
+}
+.text a {
+    color: #d35400;
+    text-decoration: underline;
+ }
+.btn {
+    background-color: #ff00114d;
+    color: #d35400;
+    border-color: #d35400;
+    border: 1px solid;
+    border-radius: 25px;
+    margin-bottom: 15px; 
+}
+.btn:hover {
+    background-color: #34495e;
+    border-color: #d35400;
+    color: #d35400;
+    border-radius: 25px;
+}
+#header {
+  border-radius: 25px;
+  background: #293847	;
+  padding: 20px;
+  text-align: center;
+}
