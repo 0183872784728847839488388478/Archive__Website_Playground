@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/tabs2.css">
+        <link rel="stylesheet" href="../old-css/tabs2.css">
     </head>
     <script>
         function stopAudio(audio) {
@@ -17,10 +17,11 @@
 					<div>
                         <p>[---------------------------------------]</p>
                     </div>
-                    <div><audio preload="auto" id="rickroll">
+                    <div>
+                        <audio preload="auto" id="rickroll">
                             <source src="../sound/final/rickroll.mp3" type="audio/mpeg">
-                        </audio><button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('rickroll').play()">Button</button>
-                    
+                        </audio>
+                        <button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('rickroll').play()">Button</button>
                     <div>
                         <button type="button" class="btn btn-lg btn-block" onclick="stopAudio(rickroll);">Sound Stopper</button>
                     </div>
