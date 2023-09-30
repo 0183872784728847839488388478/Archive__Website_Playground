@@ -1,0 +1,25 @@
+/* Style the tab */
+.main_tab_list {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: auto;
+  overflow: visible;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 24px;
+  width: auto;
+  border-left: none;
+  height: 300px;
+
+  background-color: purple;
+}

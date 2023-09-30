@@ -1,0 +1,69 @@
+@import url("reset.css");
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color:#333
+}
+#wrapper {
+    width: 100%;
+    min-width: 1000px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+#navigationwrap {
+    width: 100%;
+    float: center;
+    margin: 0 auto;
+    align-content: center;
+    
+    
+}
+
+#navigation {
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    background: #A9A9A9;
+
+}
+
+#contentliquid {
+    float: left;
+    width: 100%;
+}
+
+#contentwrap {
+    margin-left: 150px;
+    float: center;
+}
+
+#content {
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+    margin: 5px;
+}
+
+#leftcolumnwrap {
+    width: 150px;
+    margin-left: -100%;
+    float: left;
+}
+
+#leftcolumn {
+    background: #1d5242;
+    border-radius: 10px;
+    border: 1px solid #40555c;
+    margin: 5px;
+}
+
+p {
+    text-align: center;
+    color: #d35400;
+    border-color: #d35400;
+    background: #333;
+    font-size: x-large;
+    height: 50px;
+
+}
