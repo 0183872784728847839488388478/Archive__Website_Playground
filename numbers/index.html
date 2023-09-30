@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <link rel='stylesheet' href="./css/index.css"/>
+		<link rel='stylesheet' href="./css/index2.css"/>
+		<link rel='stylesheet' href="./css/progres.css"/>
+		<script src="./js/index.js"></script>
+    </head>
+    <body style='background:#444'>
+	<center>
+		<div>
+
+			<div class='s8s'>
+				<input id="time_seconds_tens" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+			<div class='s8s'>
+				<input id="time_seconds_ones" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+		</div>
+        <div style='background: #555;'>
+			<div class='s7s'>
+				<input id="slot_0" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_1" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_2" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_3" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_4" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_5" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_6" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_7" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_8" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+
+			<div class='s7s'>
+				<input id="slot_9" value=' '/>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+				<seg></seg>
+			</div>
+        </div>
+		<progress style='width:1040px;' id="progress_time" value="0" max="100"><span id="time">00:00</span></progress>
+		<div style='background: #555;'>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(0)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(1)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(2)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(3)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(4)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(5)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(6)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(7)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(8)">SHOW THIS</button>
+			<button style='width:104px;' type="button" class="button_global" onclick="game_show(9)">SHOW THIS</button>
+		</div>
+		<div style='background: #555;'>
+				<button type="button" class="button_global" onclick="game_shuffle()">SHUFFLE</button>
+				<button type="button" class="button_global" onclick="game_start()">START</button>
+				<button type="button" class="button_global" onclick="game_show_all()">SHOW</button>
+				<button type="button" class="button_global" onclick="game_hide_all()">HIDE</button>
+
+        </div>
+	</center>
+    </body>
+</html>
