@@ -1,7 +1,5 @@
-.grids {
+.main_tab_list{
     display: flex;
     align-content: center;
-    width: 1000px;
-}
-.grids_members {
+    flex-direction: column;
 }
