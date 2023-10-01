@@ -1,0 +1,27 @@
+.button_expert {
+	background-color:#a3a3a3;
+	border-radius:10px;
+	border:1px solid #a3a3a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+.button_expert:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#a3a3a3;
+}
+.button_expert:active {
+	position:relative;
+	top:1px;
+}
+
+        

@@ -1,0 +1,245 @@
+:root {
+    --second-bg-color: none;
+    --second-ia-color: #424242;
+    --second-a-color: rgb(255, 0, 0);
+    --second-padding-p: 4px;
+    --second-bar-w: 16px;
+    --second-bar-pad: 8px;
+  
+    /* no need to change after here */
+    --second-padding: calc(var(--second-padding-p)*2);
+    --second-bar-h: calc(var(--second-bar-w)*4);
+    --second-bar-r: calc(var(--second-bar-w)/2);
+    --second-bar-p: calc(var(--second-padding-p) + var(--second-bar-w));
+    --second-bar-p-t: calc(var(--second-bar-p)*2);
+    --second-c-w: calc(var(--second-bar-p-t) + var(--second-bar-h));
+    --second-bar-h-t: calc(var(--second-bar-h)*2);
+    --second-c-h-np: calc(var(--second-bar-p-t) + var(--second-bar-h-t));
+    --second-c-h: calc(calc(var(--second-c-h-np) + var(--second-padding-p)) + var(--second-bar-pad));
+  }
+  
+  .s8s {
+    display: inline-block;
+    width: var(--second-c-w);
+    height: var(--second-c-h);
+    background: var(--second-bg-color);
+    position: relative;
+    margin: 0;
+  }
+  .s8s input {
+    display: none;
+  }
+  
+  .s8s seg {
+    background: var(--second-ia-color);
+    border-radius: var(--second-bar-r);
+    height: var(--second-bar-h);
+    width: var(--second-bar-w);
+  }
+  
+  .s8s seg:nth-of-type(3n+1) {
+    height: var(--second-bar-w);
+    width: var(--second-bar-h);
+    left: 50%;
+    margin-left: calc(var(--second-bar-h) / -2);
+  }
+  
+  .s8s seg:nth-of-type(1) {
+    position: absolute;
+    top: var(--second-padding);
+  }
+  
+  .s8s seg:nth-of-type(2) {
+    position: absolute;
+    top: var(--second-bar-p);
+    right: var(--second-padding);
+  }
+  
+  .s8s seg:nth-of-type(3) {
+    position: absolute;
+    bottom: var(--second-bar-p);
+    right: var(--second-padding);
+  }
+  
+  .s8s seg:nth-of-type(4) {
+    position: absolute;
+    bottom: var(--second-padding);
+  }
+  
+  .s8s seg:nth-of-type(5) {
+    position: absolute;
+    bottom: var(--second-bar-p);
+    left: var(--second-padding);
+  }
+  
+  .s8s seg:nth-of-type(6) {
+    position: absolute;
+    top: var(--second-bar-p);
+    left: var(--second-padding);
+  }
+  
+  .s8s seg:nth-of-type(7) {
+    position: absolute;
+    top: 50%;
+    margin-top: calc(var(--second-bar-r) * -1);
+  }
+  
+.s8s input[value='0'] ~ seg:nth-of-type(1) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='0'] ~ seg:nth-of-type(2) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='0'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='0'] ~ seg:nth-of-type(4) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='0'] ~ seg:nth-of-type(5) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='0'] ~ seg:nth-of-type(6) {
+    background: var(--second-a-color);
+  }
+  
+.s8s input[value='1'] ~ seg:nth-of-type(2) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='1'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+  
+.s8s input[value='2'] ~ seg:nth-of-type(1) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='2'] ~ seg:nth-of-type(2) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='2'] ~ seg:nth-of-type(4) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='2'] ~ seg:nth-of-type(5) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='2'] ~ seg:nth-of-type(7) {
+    background: var(--second-a-color);
+  }
+  
+.s8s input[value='3'] ~ seg:nth-of-type(1) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='3'] ~ seg:nth-of-type(2) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='3'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='3'] ~ seg:nth-of-type(4) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='3'] ~ seg:nth-of-type(7) {
+    background: var(--second-a-color);
+  }
+  
+.s8s input[value='4'] ~ seg:nth-of-type(2) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='4'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='4'] ~ seg:nth-of-type(6) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='4'] ~ seg:nth-of-type(7) {
+    background: var(--second-a-color);
+  }
+  
+  
+.s8s input[value='5'] ~ seg:nth-of-type(1) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='5'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='5'] ~ seg:nth-of-type(4) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='5'] ~ seg:nth-of-type(6) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='5'] ~ seg:nth-of-type(7) {
+    background: var(--second-a-color);
+  }
+  
+.s8s input[value='6'] ~ seg:nth-of-type(1) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='6'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='6'] ~ seg:nth-of-type(4) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='6'] ~ seg:nth-of-type(5) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='6'] ~ seg:nth-of-type(6) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='6'] ~ seg:nth-of-type(7) {
+    background: var(--second-a-color);
+  }
+  
+  
+.s8s input[value='7'] ~ seg:nth-of-type(1) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='7'] ~ seg:nth-of-type(2) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='7'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+  
+  
+.s8s input[value='8'] ~ seg:nth-of-type(1) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='8'] ~ seg:nth-of-type(2) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='8'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='8'] ~ seg:nth-of-type(4) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='8'] ~ seg:nth-of-type(5) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='8'] ~ seg:nth-of-type(6) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='8'] ~ seg:nth-of-type(7) {
+    background: var(--second-a-color);
+  }
+  
+.s8s input[value='9'] ~ seg:nth-of-type(1) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='9'] ~ seg:nth-of-type(2) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='9'] ~ seg:nth-of-type(3) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='9'] ~ seg:nth-of-type(4) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='9'] ~ seg:nth-of-type(6) {
+    background: var(--second-a-color);
+  }
+.s8s input[value='9'] ~ seg:nth-of-type(7) {
+    background: var(--second-a-color);
+  }

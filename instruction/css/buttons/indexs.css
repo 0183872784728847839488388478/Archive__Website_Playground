@@ -1,0 +1,11 @@
+
+/* Style the tab content */
+.tabcontent {
+  float: center;
+  padding: 0px 24px;
+  width: auto;
+  border-left: none;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
