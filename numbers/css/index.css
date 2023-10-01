@@ -3,8 +3,8 @@
     --ia-color: #494949;
     --a-color: rgb(107, 255, 166);
     --padding-p: 4px;
-    --bar-w: 16px;
-    --bar-pad: 8px;
+    --bar-w: 12px;
+    --bar-pad: 6px;
   
     /* no need to change after here */
     --padding: calc(var(--padding-p)*2);
