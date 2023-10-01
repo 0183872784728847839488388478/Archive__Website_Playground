@@ -3,13 +3,13 @@
 }
 
 .button_global {
-    width: 104px; 
-    height: 50px;
+    width: 100px; 
+    height: 45px;
     background: dimgray;
 }
 
 .button_global_warning {
-  width: 104px; 
-  height: 50px;
+  width: 100px; 
+  height: 45px;
   background: rgb(141, 41, 41);
 }

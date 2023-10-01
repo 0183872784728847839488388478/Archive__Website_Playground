@@ -35,7 +35,7 @@
 			</div>
 		</div>
 		<progress id="progress_time" value="0" max="100"><span id="time">00:00</span></progress>
-        <div style='background: #555;'>
+        <div style='background: #444;'>
 			<div class='s7s'>
 				<input id="slot_0" value=' '/>
 				<seg></seg>
@@ -159,6 +159,11 @@
 			<button type="button" class="button_global" onclick="game_show(9)">SHOW THIS</button>
 		</div>
 		<div>
+			<button type="button" class="button_global" onclick="document.getElementById('start').play()">COUNT</button>
+			<button type="button" class="button_global" onclick="document.getElementById('starting').play()">START</button>
+			<button type="button" class="button_global">???</button>
+		</div>
+		<div>
 			<button type="button" class="button_global" onclick="game_shuffle()">SHUFFLE</button>
 			<button type="button" class="button_global" onclick="game_show_all()">SHOW</button>
 			<button type="button" class="button_global" onclick="game_hide_all()">HIDE</button>
@@ -167,23 +172,29 @@
 
         </div>
         <div>
-	        <button type="button" class="button_global" onclick="startTimer(60)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(45)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(30)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(25)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(10)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(5)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer(60)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer(45)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer(30)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer(25)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer(10)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer(5)">TIME</button>
 	    </div>
 		<div>
-	        <button type="button" class="button_global" onclick="startTimer_random(60)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer_random(45)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer_random(30)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer_random(25)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer_random(10)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer_random(5)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(60)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(45)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(30)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(25)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(10)">TIME</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(5)">TIME</button>
 	    </div>
 	</center>
     </body>
 	<footer>
+		
+		<button type="button" class="button_global" onclick="document.getElementById('wonderhoy').play()">???</button>
+		<audio preload="auto" id="start"><source src=".//panel/start.mp3" type="audio/mpeg"></audio>
+		<audio preload="auto" id="starting"><source src=".//panel/starting_tone.mp3" type="audio/mpeg"></audio>
+		<audio preload="auto" id="wonderhoy"><source src=".//panel/wonderhoy.mp3" type="audio/mpeg"></audio>
+				
 	</footer>
 </html>

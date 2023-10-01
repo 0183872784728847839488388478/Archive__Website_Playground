@@ -9,7 +9,7 @@ progress[value] {
       linear-gradient(orange 0 0) 0 /calc(var(--w)*.60 - 100%) 1px,
       /* else "green" */
       green;
-    --background: lightgrey; /* the background color */
+    --background: dimgray; /* the background color */
   
     -webkit-appearance: none;
     -moz-appearance: none;

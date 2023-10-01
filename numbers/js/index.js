@@ -143,7 +143,7 @@ function GetURLParameter(sParam)
             return sParameterName[1];
         }
     }
-}​
+}
 
 var numbering = GetURLParameter('number');
 if (typeof variable !== 'undefined'){
