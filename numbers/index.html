@@ -6,7 +6,8 @@
 		<link rel='stylesheet' href="./css/buttons.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="./js/index.js"></script>
-		<script src="./js/button.js"></script>
+		<script src="./js/countdown.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body style='background:#444'>
 	<center>
@@ -163,13 +164,21 @@
 			<button type="button" class="button_global" onclick="game_hide_all()">HIDE</button>
 			<button type="button" class="button_global" onclick="game_show_random()">RANDOM</button>
         </div>
+		<div>
+			<div id="countdown">00:00</div>
+		</div>
+		<div>
+			<button type="button" class="button_global" onclick="startTimer.Resume()">PLAY</button>
+			<button type="button" class="button_global" onclick="startTimer.Pause()">PAUSE</button>
+			<button type="button" class="button_global" onclick="startTimer.Start(0)">STOP</button>
+		</div>
         <div>
-	        <button type="button" class="button_global" onclick="startTimer(60)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(45)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(30)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(25)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(10)">START</button>
-	        <button type="button" class="button_global" onclick="startTimer(5)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer.Start(60000)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer.Start(45000)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer.Start(30000)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer.Start(25000)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer.Start(10000)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer.Start(5000)">START</button>
 	    </div>
 	</center>
     </body>

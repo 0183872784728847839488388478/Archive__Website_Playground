@@ -51,43 +51,6 @@ function game_hide_all(){
         display_hide(i)
     }
 }
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-  
-
-
-
-function startTimer(duration) {
-    if (timer = timer) {
-        timer = null
-    }
-    clearInterval(endinterval)
-    var timer = duration, minutes, seconds;
-    document.getElementById('progress_time').setAttribute("max", duration);
-    var endinterval = setInterval(
-            function () {
-                minutes = parseInt(timer / 60, 10);
-                seconds = parseInt(timer % 60, 10);
-
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                game_show_random()
-                if (--timer < 0) {
-                    document.getElementById('time_seconds_tens').setAttribute("value",10);
-                    document.getElementById('time_seconds_ones').setAttribute("value",10);
-                    game_hide_all()
-                    clearInterval(endinterval)
-                }
-
-                tpoqoieow = minutes + "" + seconds;
-                uiotret = tpoqoieow.split("");
-                document.getElementById('progress_time').setAttribute("value", seconds);
-                document.getElementById('time_seconds_tens').setAttribute("value", uiotret[2]);
-                document.getElementById('time_seconds_ones').setAttribute("value", uiotret[3]);
-        }, 1000);
-}
 
 function game_show_random() {
     game_hide_all()
