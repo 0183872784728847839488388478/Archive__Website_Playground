@@ -1,0 +1,9 @@
+.button-clicked {
+  background: red;
+}
+
+.button_global {
+    width: 104px; 
+    height: 50px;
+    background: dimgray;
+}

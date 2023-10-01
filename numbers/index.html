@@ -3,7 +3,10 @@
         <link rel='stylesheet' href="./css/index.css"/>
 		<link rel='stylesheet' href="./css/index2.css"/>
 		<link rel='stylesheet' href="./css/progres.css"/>
+		<link rel='stylesheet' href="./css/buttons.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="./js/index.js"></script>
+		<script src="./js/button.js"></script>
     </head>
     <body style='background:#444'>
 	<center>
@@ -30,6 +33,7 @@
 				<seg></seg>
 			</div>
 		</div>
+		<progress id="progress_time" value="0" max="100"><span id="time">00:00</span></progress>
         <div style='background: #555;'>
 			<div class='s7s'>
 				<input id="slot_0" value=' '/>
@@ -141,26 +145,33 @@
 				<seg></seg>
 			</div>
         </div>
-		<progress style='width:1040px;' id="progress_time" value="0" max="100"><span id="time">00:00</span></progress>
-		<div style='background: #555;'>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(0)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(1)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(2)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(3)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(4)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(5)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(6)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(7)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(8)">SHOW THIS</button>
-			<button style='width:104px;' type="button" class="button_global" onclick="game_show(9)">SHOW THIS</button>
+		<div>
+			<button type="button" class="button_global" onclick="game_show(0)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(1)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(2)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(3)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(4)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(5)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(6)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(7)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(8)">SHOW THIS</button>
+			<button type="button" class="button_global" onclick="game_show(9)">SHOW THIS</button>
 		</div>
-		<div style='background: #555;'>
-				<button type="button" class="button_global" onclick="game_shuffle()">SHUFFLE</button>
-				<button type="button" class="button_global" onclick="game_start()">START</button>
-				<button type="button" class="button_global" onclick="game_show_all()">SHOW</button>
-				<button type="button" class="button_global" onclick="game_hide_all()">HIDE</button>
-
+		<div>
+			<button type="button" class="button_global" onclick="game_shuffle()">SHUFFLE</button>
+			<button type="button" class="button_global" onclick="game_show_all()">SHOW</button>
+			<button type="button" class="button_global" onclick="game_hide_all()">HIDE</button>
+			<button type="button" class="button_global" onclick="game_show_random()">RANDOM</button>
         </div>
+        <div>
+	        <button type="button" class="button_global" onclick="startTimer(60)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer(45)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer(30)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer(25)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer(10)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer(5)">START</button>
+	    </div>
 	</center>
     </body>
+
 </html>

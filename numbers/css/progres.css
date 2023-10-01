@@ -1,12 +1,12 @@
 progress[value] {
-    --w: 200px; /* the width*/
+    --w: 1040px; /* the width*/
     --color:  /* the progress color */
       linear-gradient(#fff8,#fff0),
       repeating-linear-gradient(135deg,#0003 0 10px,#0000 0 20px),
       /* if < 30% "red" */
-      linear-gradient(red    0 0) 0 /calc(var(--w)*.3 - 100%) 1px,
+      linear-gradient(red    0 0) 0 /calc(var(--w)*.30 - 100%) 1px,
       /* if < 60% "orange" */
-      linear-gradient(orange 0 0) 0 /calc(var(--w)*.6 - 100%) 1px,
+      linear-gradient(orange 0 0) 0 /calc(var(--w)*.60 - 100%) 1px,
       /* else "green" */
       green;
     --background: lightgrey; /* the background color */
