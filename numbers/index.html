@@ -4,9 +4,10 @@
 		<link rel='stylesheet' href="./css/index2.css"/>
 		<link rel='stylesheet' href="./css/progres.css"/>
 		<link rel='stylesheet' href="./css/buttons.css"/>
+		<link rel='stylesheet' href="./css/modal.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="./js/index.js"></script>
-		<script src="./js/button.js"></script>
+		<script src="./js/modal.js"></script>
     </head>
     <body style='background:#444'>
 	<center>
@@ -162,6 +163,8 @@
 			<button type="button" class="button_global" onclick="game_show_all()">SHOW</button>
 			<button type="button" class="button_global" onclick="game_hide_all()">HIDE</button>
 			<button type="button" class="button_global" onclick="game_show_random()">RANDOM</button>
+			<button type="button" class="button_global_warning" id="button_global_warning" onclick="refreshPage()">RESET</button>
+
         </div>
         <div>
 	        <button type="button" class="button_global" onclick="startTimer(60)">START</button>
@@ -171,7 +174,16 @@
 	        <button type="button" class="button_global" onclick="startTimer(10)">START</button>
 	        <button type="button" class="button_global" onclick="startTimer(5)">START</button>
 	    </div>
+		<div>
+	        <button type="button" class="button_global" onclick="startTimer_random(60)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(45)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(30)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(25)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(10)">START</button>
+	        <button type="button" class="button_global" onclick="startTimer_random(5)">START</button>
+	    </div>
 	</center>
     </body>
-
+	<footer>
+	</footer>
 </html>

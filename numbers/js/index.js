@@ -58,10 +58,12 @@ function sleep(ms) {
 
 
 
-function startTimer(duration) {
+function startTimer_random(duration) {
+    
     if (timer = timer) {
         timer = null
     }
+    
     clearInterval(endinterval)
     var timer = duration, minutes, seconds;
     document.getElementById('progress_time').setAttribute("max", duration);
@@ -74,6 +76,7 @@ function startTimer(duration) {
                 seconds = seconds < 10 ? "0" + seconds : seconds;
 
                 game_show_random()
+                
                 if (--timer < 0) {
                     document.getElementById('time_seconds_tens').setAttribute("value",10);
                     document.getElementById('time_seconds_ones').setAttribute("value",10);
@@ -88,9 +91,68 @@ function startTimer(duration) {
                 document.getElementById('time_seconds_ones').setAttribute("value", uiotret[3]);
         }, 1000);
 }
+function startTimer(duration) {
+    
+    if (timer = timer) {
+        timer = null
+    }
+    
+    clearInterval(endinterval)
+    var timer = duration, minutes, seconds;
+    document.getElementById('progress_time').setAttribute("max", duration);
+    var endinterval = setInterval(
+            function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
 
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                
+                if (--timer < 0) {
+                    document.getElementById('time_seconds_tens').setAttribute("value",10);
+                    document.getElementById('time_seconds_ones').setAttribute("value",10);
+                    game_hide_all()
+                    clearInterval(endinterval)
+                }
+
+                tpoqoieow = minutes + "" + seconds;
+                uiotret = tpoqoieow.split("");
+                document.getElementById('progress_time').setAttribute("value", seconds);
+                document.getElementById('time_seconds_tens').setAttribute("value", uiotret[2]);
+                document.getElementById('time_seconds_ones').setAttribute("value", uiotret[3]);
+        }, 1000);
+}
 function game_show_random() {
     game_hide_all()
     let gshdkldfs = Math.floor((Math.random() * 10));
     display_set(gshdkldfs,numberlist[gshdkldfs])
+}
+function refreshPage(){
+    window.location.reload();
+} 
+
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}​
+
+var numbering = GetURLParameter('number');
+if (typeof variable !== 'undefined'){
+    let length = numbering.length;
+    if (length <= 10) {
+        orieatyu = numbering.split("");
+        for (var i = 0; i < 10; i++) {
+            display_create(i,orieatyu[i])
+            display_hide(i)
+          }   
+    }
 }
