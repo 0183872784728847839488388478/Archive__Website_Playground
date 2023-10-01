@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html>
-	<head>
+<head>
 		<link rel="stylesheet" type="text/css" href="./css/index.css">
 		<link rel="stylesheet" href="./css/buttons/global.css">
 		<link rel="stylesheet" href="./css/buttons/indexs.css">
@@ -267,7 +266,7 @@
 								<div class="grids2">
 									<div>
 										<div>
-											<p1> Rule </p1>
+											<button type="button" class="tablinks"> Rule </button>
 										</div>
 										<div>
 											<audio preload="auto" id="11">
@@ -308,7 +307,7 @@
 									</div>
 									<div>
 										<div>
-											<p1> Words </p1>
+											<button type="button" class="tablinks"> Words </button>
 										</div>
 										<div>
 											<audio preload="auto" id="forward">
@@ -343,7 +342,7 @@
 									</div>
 									<div>
 										<div>
-											<p1> Letters </p1>
+											<button type="button" class="tablinks"> Letters </button>
 										</div>
 										<div>
 											<audio preload="auto" id="f">
@@ -378,7 +377,7 @@
 									</div>
 									<div>
 										<div>
-											<p1> Turns </p1>
+											<button type="button" class="tablinks"> Turns </button>
 										</div>
 										<div>
 											<audio preload="auto" id="Front">
@@ -413,7 +412,7 @@
 									</div>
 									<div>
 										<div>
-											<p1>Turn Letters </p1>
+											<button type="button" class="tablinks">Turn Letters </button>
 										</div>
 										<div>
 											<div>
@@ -454,7 +453,7 @@
 								<div class="grids2">
 									<div>
 										<div>
-											<p1> Rule </p1>
+											<button type="button" class="tablinks"> Rule </button>
 										</div>
 										<div>
 											<audio preload="auto" id="11">
@@ -495,7 +494,7 @@
 									</div>
 									<div>
 										<div>
-											<p1> Words </p1>
+											<button type="button" class="tablinks"> Words </button>
 										</div>
 										<div>
 											<audio preload="auto" id="forward">
@@ -530,7 +529,7 @@
 									</div>
 									<div>
 										<div>
-											<p1> Letters </p1>
+											<button type="button" class="tablinks"> Letters </button>
 										</div>
 										<div>
 											<audio preload="auto" id="f">
@@ -565,7 +564,7 @@
 									</div>
 									<div>
 										<div>
-											<p1> Turn</p1>
+											<button type="button" class="tablinks"> Turn </button>
 										</div>
 										<div>
 											<audio preload="auto" id="Front">
@@ -590,38 +589,73 @@
 												<source src="./sound/look/Left.mpeg" type="audio/mpeg">
 											</audio><button type="button" class="button_expert" onclick="document.getElementById('Left').play()">???</button>
 										</div>
-										<div><audio preload="auto" id="Right">
+										<div>
+											<audio preload="auto" id="Right">
 												<source src="./sound/look/Right.mpeg" type="audio/mpeg">
-											</audio><button type="button" class="button_expert" onclick="document.getElementById('Right').play()">???</button></div>
+											</audio>
+											<button type="button" class="button_expert" onclick="document.getElementById('Right').play()">???</button>
+										</div>
 									</div>
+									
 									<div>
-										<p1>Turn Letters </p1>
-									</div>
-									<div>
+										<div>
+											<button type="button" class="tablinks">Turn Letters</button>
+										</div>
 										<div>
 											<audio preload="auto" id="f">
 													<source src="./sound/letters/f.mpeg" type="audio/mpeg">
 											</audio>
-											<button type="button" class="button_expert" onclick="document.getElementById('f').play()">???</button></div><div><audio preload="auto" id="b">
+											<button type="button" class="button_expert" onclick="document.getElementById('f').play()">???</button>
+										</div>
+										<div>
+											<audio preload="auto" id="b">
 													
 												<source src="./sound/letters/b.mpeg" type="audio/mpeg">
 												
-											</audio><button type="button" class="button_expert" onclick="document.getElementById('b').play()">???</button></div><div><audio preload="auto" id="j">
+											</audio>
+											<button type="button" class="button_expert" onclick="document.getElementById('b').play()">???</button>
+										</div>
+										<div>
+											<audio preload="auto" id="j">
 												
 												<source src="./sound/letters/j.mpeg" type="audio/mpeg">
-												</audio><button type="button" class="button_expert" onclick="document.getElementById('j').play()">???</button></div><div><audio preload="auto" id="l">
-													<source src="./sound/letters/l.mpeg" type="audio/mpeg">
-												</audio><button type="button" class="button_expert" onclick="document.getElementById('l').play()">???</button></div><div><audio preload="auto" id="r">
-													<source src="./sound/letters/r.mpeg" type="audio/mpeg">
-												</audio><button type="button" class="button_expert" onclick="document.getElementById('r').play()">???</button></div></div></div>
+											</audio>
+											<button type="button" class="button_expert" onclick="document.getElementById('j').play()">???</button>
+										</div>
+										<div>
+											<audio preload="auto" id="l">
+												<source src="./sound/letters/l.mpeg" type="audio/mpeg">
+											</audio>
+											<button type="button" class="button_expert" onclick="document.getElementById('l').play()">???</button>
+										</div>
+										<div>
+											<audio preload="auto" id="r">
+												<source src="./sound/letters/r.mpeg" type="audio/mpeg">
+											</audio>
+											<button type="button" class="button_expert" onclick="document.getElementById('r').play()">???</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="leftcolumnwrap"><div id="leftcolumn"><div class="main_tab_list"><button class="tablinks" onclick="tablist_change('1')">--???--</button><button class="tablinks" onclick="tablist_change('2')">Normal</button><button class="tablinks" onclick="tablist_change('3')">Letters</button><button class="tablinks" onclick="tablist_change('4')">Reverse</button><button class="tablinks" onclick="tablist_change('5')">Letters?</button><button class="tablinks" onclick="tablist_change('6')">--???--</button><button class="tablinks" onclick="tablist_change('7')">--???--</button><button class="tablinks" onclick="tablist_change('8')">All</button><button class="tablinks" onclick="tablist_change('9')">???</button></div></div>
+				<div id="leftcolumnwrap">
+					<div id="leftcolumn">
+						<div class="main_tab_list">
+							<button class="tablinks" onclick="tablist_change('1')">--???--</button>
+							<button class="tablinks" onclick="tablist_change('2')">Normal</button>
+							<button class="tablinks" onclick="tablist_change('3')">Letters</button>
+							<button class="tablinks" onclick="tablist_change('4')">Reverse</button>
+							<button class="tablinks" onclick="tablist_change('5')">Letters?</button>
+							<button class="tablinks" onclick="tablist_change('6')">--???--</button>
+							<button class="tablinks" onclick="tablist_change('7')">--???--</button>
+							<button class="tablinks" onclick="tablist_change('8')">All</button>
+							<button class="tablinks" onclick="tablist_change('9')">???</button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</body>
-</html>
+		
+	
+</body></html>
