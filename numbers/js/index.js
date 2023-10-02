@@ -78,6 +78,7 @@ function startTimer_random(duration) {
 	var timer = duration,
 		minutes, seconds;
 	document.getElementById('progress_time').setAttribute("max", duration);
+	document.getElementById('progress_time2').setAttribute("max", duration);
 	var endinterval = setInterval(
 		function() {
 			minutes = parseInt(timer / 60, 10);
@@ -98,6 +99,7 @@ function startTimer_random(duration) {
 			tpoqoieow = minutes + "" + seconds;
 			uiotret = tpoqoieow.split("");
 			document.getElementById('progress_time').setAttribute("value", seconds);
+			document.getElementById('progress_time2').setAttribute("value", seconds);
 			document.getElementById('time_seconds_tens').setAttribute("value", uiotret[2]);
 			document.getElementById('time_seconds_ones').setAttribute("value", uiotret[3]);
 		}, 1000);
@@ -113,6 +115,7 @@ function startTimer(duration) {
 	var timer = duration,
 		minutes, seconds;
 	document.getElementById('progress_time').setAttribute("max", duration);
+	document.getElementById('progress_time2').setAttribute("max", duration);
 	var endinterval = setInterval(
 		function() {
 			minutes = parseInt(timer / 60, 10);
@@ -131,6 +134,7 @@ function startTimer(duration) {
 			tpoqoieow = minutes + "" + seconds;
 			uiotret = tpoqoieow.split("");
 			document.getElementById('progress_time').setAttribute("value", seconds);
+			document.getElementById('progress_time2').setAttribute("value", seconds);
 			document.getElementById('time_seconds_tens').setAttribute("value", uiotret[2]);
 			document.getElementById('time_seconds_ones').setAttribute("value", uiotret[3]);
 		}, 1000);
