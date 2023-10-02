@@ -6,6 +6,7 @@
 		<link rel='stylesheet' href="./css/buttons.css"/>
 		<link rel='stylesheet' href="./css/modal.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="./js/index.js"></script>
 		<script src="./js/modal.js"></script>
     </head>
@@ -158,19 +159,6 @@
 			<button type="button" class="button_global" onclick="game_show(8)">SHOW THIS</button>
 			<button type="button" class="button_global" onclick="game_show(9)">SHOW THIS</button>
 		</div>
-		<div>
-			<button type="button" class="button_global" onclick="document.getElementById('start').play()">COUNT</button>
-			<button type="button" class="button_global" onclick="document.getElementById('starting').play()">START</button>
-			<button type="button" class="button_global">???</button>
-		</div>
-		<div>
-			<button type="button" class="button_global" onclick="game_shuffle()">SHUFFLE</button>
-			<button type="button" class="button_global" onclick="game_show_all()">SHOW</button>
-			<button type="button" class="button_global" onclick="game_hide_all()">HIDE</button>
-			<button type="button" class="button_global" onclick="game_show_random()">RANDOM</button>
-			<button type="button" class="button_global_warning" id="button_global_warning" onclick="refreshPage()">RESET</button>
-
-        </div>
         <div>
 	        <button type="button" class="button_global" onclick="startTimer(60)">TIME</button>
 	        <button type="button" class="button_global" onclick="startTimer(45)">TIME</button>
@@ -187,6 +175,22 @@
 	        <button type="button" class="button_global" onclick="startTimer_random(10)">TIME</button>
 	        <button type="button" class="button_global" onclick="startTimer_random(5)">TIME</button>
 	    </div>
+		<div>
+			<button type="button" class="button_global" onclick="document.getElementById('start').play()">COUNT</button>
+			<button type="button" class="button_global" onclick="document.getElementById('starting').play()">START</button>
+			<button type="button" class="button_global" onclick="game_show_all()">SHOW</button>
+			<button type="button" class="button_global" onclick="game_hide_all()">HIDE</button>
+			<button type="button" class="button_global">???</button>
+		</div>
+		<div>
+			<button type="button" class="button_global" onclick="game_shuffle()">SHUFFLE</button>
+			<button type="button" class="button_global" onclick="START_LINE()">PRESET</button>
+			<button type="button" class="button_global" onclick="game_show_random()">RANDOM</button>
+			<button type="button" class="button_global_warning" id="button_global_warning" onclick="refreshPage()">RESET</button>
+        </div>
+
+
+		
 	</center>
     </body>
 	<footer>
@@ -195,6 +199,6 @@
 		<audio preload="auto" id="start"><source src=".//panel/start.mp3" type="audio/mpeg"></audio>
 		<audio preload="auto" id="starting"><source src=".//panel/starting_tone.mp3" type="audio/mpeg"></audio>
 		<audio preload="auto" id="wonderhoy"><source src=".//panel/wonderhoy.mp3" type="audio/mpeg"></audio>
-				
+		
 	</footer>
 </html>
