@@ -1,5 +1,5 @@
 progress[value] {
-    --w: 1040px; /* the width*/
+    --w: 800px; /* the width*/
     --color:  /* the progress color */
       linear-gradient(#fff8,#fff0),
       repeating-linear-gradient(135deg,#0003 0 10px,#0000 0 20px),
