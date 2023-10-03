@@ -1,6 +1,6 @@
 @echo off 
 setlocal
-SET /A n= 800
+SET /A n= 0
 SET /A t= 0
 SET /A p= 0
 SET /A m= 999
