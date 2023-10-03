@@ -2,6 +2,7 @@
     display: flex;
     align-content: center;
     width: 1000px;
+    background-color: #444;
 }
 .grids_members {
 }
