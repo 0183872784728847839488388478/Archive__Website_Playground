@@ -1,14 +1,14 @@
-function blockspawn(a) {
-
+function blockspawn(a,loc) {
+        if (loc) a
         
-        let spawn = Math.floor((Math.random() * 10));
-
+        let loc = Math.floor((Math.random() * 10));
         var div = document.createElement("div");
         div.id = a
-        div.style.marginLeft = spawn*104
+        div.style.marginLeft = loc*104
         div.style.width = "104px"
         div.style.height = "50px"
         div.style.background = "red"
+        div.style.zindex = Math.floor((Math.random() * 1024));
 
         document.getElementById("area").appendChild(div);
     return div.id
@@ -23,15 +23,15 @@ function movespawn(a) {
     const div = document.getElementById(a)
 
     var i = 0;
-    // This block will be executed 100 times.
-    setInterval(function() {
-        if (i == 700) {
-            clearInterval(this)
-            deletespawn(a)
-        } else {
-            div.style.marginTop = (i++)
-    }
-    }, 10);
+    var b = setInterval(function() {
+            if (i > 700) {
+                deletespawn(a);
+                clearInterval(b);
+                return;
+            } else {
+                div.style.marginTop = (i++)
+        }
+    }, 1);
     
     
 
@@ -62,4 +62,13 @@ function start() {
         deletespawn(card)
     }, delayInMilliseconds);
 
+}
+
+function startess(argument) {
+    start()
+    start()
+    start()
+    start()
+    start()
+    start()
 }
