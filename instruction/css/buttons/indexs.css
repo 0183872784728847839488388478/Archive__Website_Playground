@@ -6,6 +6,6 @@
   width: auto;
   border-left: none;
   width: 1000px;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
